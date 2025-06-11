@@ -1,0 +1,501 @@
+Date,Issue Subject,Issue Solution,Ticket ID
+2024-11-19,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4000
+2024-09-25,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4001
+2024-12-19,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4002
+2025-02-07,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4003
+2024-08-22,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4004
+2025-01-19,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4005
+2025-01-10,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4006
+2024-10-22,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4007
+2025-02-23,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4008
+2024-12-18,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4009
+2025-03-10,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4010
+2024-07-28,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4011
+2024-06-11,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4012
+2024-11-02,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4013
+2024-09-14,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4014
+2025-04-01,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4015
+2024-06-16,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4016
+2025-02-03,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4017
+2024-06-28,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4018
+2025-02-05,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4019
+2025-02-09,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4020
+2024-08-27,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4021
+2024-10-20,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4022
+2024-10-09,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4023
+2025-02-06,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4024
+2024-09-12,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4025
+2025-03-26,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4026
+2024-07-31,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4027
+2024-06-13,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4028
+2024-07-17,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4029
+2024-09-26,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4030
+2025-04-27,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4031
+2024-11-20,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4032
+2024-08-10,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4033
+2025-03-31,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4034
+2025-03-02,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4035
+2025-05-29,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4036
+2025-06-08,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4037
+2024-08-21,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4038
+2025-01-25,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4039
+2025-01-18,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4040
+2024-12-11,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4041
+2024-07-02,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4042
+2025-01-12,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4043
+2025-02-10,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4044
+2024-08-24,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4045
+2025-03-20,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4046
+2025-02-06,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4047
+2024-10-31,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4048
+2024-11-17,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4049
+2024-08-30,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4050
+2025-06-11,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4051
+2024-06-30,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4052
+2024-10-29,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4053
+2024-07-27,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4054
+2025-02-18,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4055
+2025-01-17,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4056
+2025-06-02,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4057
+2024-08-27,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4058
+2025-02-12,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4059
+2025-05-21,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4060
+2024-08-19,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4061
+2025-05-13,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4062
+2025-05-06,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4063
+2025-02-27,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4064
+2024-12-30,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4065
+2025-05-28,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4066
+2025-05-06,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4067
+2024-10-03,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4068
+2024-10-08,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4069
+2024-12-26,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4070
+2025-05-27,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4071
+2024-11-17,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4072
+2024-06-25,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4073
+2025-02-06,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4074
+2024-07-19,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4075
+2024-07-07,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4076
+2024-12-17,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4077
+2025-05-03,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4078
+2024-09-10,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4079
+2024-08-28,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4080
+2025-04-17,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4081
+2024-11-29,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4082
+2024-07-26,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4083
+2025-05-03,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4084
+2025-06-06,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4085
+2024-08-11,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4086
+2025-03-30,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4087
+2024-08-04,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4088
+2025-01-30,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4089
+2025-03-01,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4090
+2025-03-03,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4091
+2024-12-22,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4092
+2025-03-01,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4093
+2025-03-09,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4094
+2024-08-24,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4095
+2025-02-05,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4096
+2024-11-02,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4097
+2025-03-03,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4098
+2025-01-06,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4099
+2025-05-12,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4100
+2025-05-05,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4101
+2024-10-27,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4102
+2025-05-07,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4103
+2024-10-05,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4104
+2025-05-04,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4105
+2024-07-02,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4106
+2025-03-02,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4107
+2025-02-28,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4108
+2025-01-30,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4109
+2024-11-30,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4110
+2025-04-15,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4111
+2025-04-04,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4112
+2025-02-03,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4113
+2024-08-04,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4114
+2025-01-10,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4115
+2025-04-29,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4116
+2025-01-01,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4117
+2025-02-25,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4118
+2024-07-27,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4119
+2024-09-15,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4120
+2024-08-13,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4121
+2024-06-17,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4122
+2024-12-20,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4123
+2024-10-16,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4124
+2025-03-14,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4125
+2025-01-31,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4126
+2025-04-18,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4127
+2024-09-02,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4128
+2025-04-19,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4129
+2024-09-18,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4130
+2024-08-05,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4131
+2025-05-01,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4132
+2024-11-21,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4133
+2025-05-22,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4134
+2024-07-04,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4135
+2025-01-30,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4136
+2024-10-29,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4137
+2025-03-16,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4138
+2024-07-01,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4139
+2024-08-13,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4140
+2024-11-19,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4141
+2025-03-08,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4142
+2025-03-18,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4143
+2024-08-24,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4144
+2025-05-31,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4145
+2024-12-16,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4146
+2024-10-07,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4147
+2024-09-19,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4148
+2025-03-01,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4149
+2024-08-04,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4150
+2025-02-11,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4151
+2025-05-04,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4152
+2024-07-27,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4153
+2025-01-27,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4154
+2025-05-17,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4155
+2025-05-19,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4156
+2025-05-12,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4157
+2024-06-27,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4158
+2024-07-22,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4159
+2025-02-18,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4160
+2025-03-17,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4161
+2025-05-06,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4162
+2024-06-11,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4163
+2024-08-12,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4164
+2024-07-28,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4165
+2025-04-29,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4166
+2025-01-17,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4167
+2025-04-02,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4168
+2025-01-04,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4169
+2025-03-17,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4170
+2025-06-03,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4171
+2024-11-06,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4172
+2025-03-23,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4173
+2025-03-22,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4174
+2025-02-15,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4175
+2024-08-10,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4176
+2025-01-04,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4177
+2024-12-30,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4178
+2024-09-19,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4179
+2024-10-23,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4180
+2024-06-26,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4181
+2025-04-09,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4182
+2024-12-15,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4183
+2025-04-28,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4184
+2024-07-08,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4185
+2025-05-12,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4186
+2024-07-20,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4187
+2025-06-11,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4188
+2024-10-27,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4189
+2025-06-07,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4190
+2024-11-02,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4191
+2024-10-17,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4192
+2024-09-04,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4193
+2024-12-18,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4194
+2024-12-05,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4195
+2025-04-23,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4196
+2024-11-13,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4197
+2025-05-12,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4198
+2025-05-14,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4199
+2024-10-09,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4200
+2025-02-15,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4201
+2024-09-12,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4202
+2025-05-24,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4203
+2024-10-26,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4204
+2024-11-25,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4205
+2024-12-02,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4206
+2024-10-03,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4207
+2024-11-20,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4208
+2024-12-15,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4209
+2025-03-15,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4210
+2025-02-21,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4211
+2025-04-22,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4212
+2025-02-20,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4213
+2025-01-09,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4214
+2024-12-31,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4215
+2024-12-01,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4216
+2024-11-12,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4217
+2024-09-18,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4218
+2024-07-05,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4219
+2024-10-07,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4220
+2025-02-21,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4221
+2024-08-23,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4222
+2024-09-26,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4223
+2024-11-27,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4224
+2024-07-29,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4225
+2025-02-20,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4226
+2025-04-09,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4227
+2025-01-08,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4228
+2025-02-25,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4229
+2024-09-13,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4230
+2025-01-30,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4231
+2025-01-19,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4232
+2025-03-25,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4233
+2025-05-18,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4234
+2025-03-16,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4235
+2024-10-30,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4236
+2024-06-12,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4237
+2025-01-18,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4238
+2025-02-05,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4239
+2024-08-20,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4240
+2025-01-01,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4241
+2025-01-10,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4242
+2025-03-22,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4243
+2024-10-29,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4244
+2025-05-03,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4245
+2024-11-02,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4246
+2025-01-25,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4247
+2024-12-14,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4248
+2025-03-22,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4249
+2024-08-22,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4250
+2024-10-15,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4251
+2024-10-23,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4252
+2025-02-19,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4253
+2025-03-29,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4254
+2025-04-26,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4255
+2025-03-27,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4256
+2025-01-05,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4257
+2024-10-15,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4258
+2025-03-15,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4259
+2025-04-10,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4260
+2025-04-14,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4261
+2024-12-26,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4262
+2024-12-15,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4263
+2024-10-26,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4264
+2024-11-19,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4265
+2025-02-02,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4266
+2024-12-05,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4267
+2025-05-23,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4268
+2025-04-24,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4269
+2024-09-29,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4270
+2024-08-28,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4271
+2024-08-31,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4272
+2024-10-06,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4273
+2024-07-25,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4274
+2025-04-24,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4275
+2024-08-18,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4276
+2025-03-18,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4277
+2024-09-29,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4278
+2025-02-14,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4279
+2025-01-18,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4280
+2025-03-28,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4281
+2024-08-04,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4282
+2025-01-22,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4283
+2024-06-17,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4284
+2024-11-24,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4285
+2024-12-11,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4286
+2024-06-26,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4287
+2025-05-23,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4288
+2024-12-18,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4289
+2025-06-04,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4290
+2024-10-01,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4291
+2024-11-05,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4292
+2024-12-17,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4293
+2024-06-29,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4294
+2024-10-27,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4295
+2024-08-22,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4296
+2025-05-13,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4297
+2024-07-23,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4298
+2025-01-31,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4299
+2024-06-16,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4300
+2025-05-22,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4301
+2025-05-30,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4302
+2024-08-19,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4303
+2025-03-13,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4304
+2024-07-10,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4305
+2024-12-02,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4306
+2025-01-15,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4307
+2025-03-06,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4308
+2025-04-20,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4309
+2024-07-29,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4310
+2024-08-04,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4311
+2024-09-09,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4312
+2024-06-15,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4313
+2024-11-01,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4314
+2025-01-21,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4315
+2025-04-15,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4316
+2024-07-10,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4317
+2024-11-03,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4318
+2025-03-20,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4319
+2025-02-15,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4320
+2025-04-20,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4321
+2024-07-15,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4322
+2025-04-04,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4323
+2024-08-18,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4324
+2025-01-09,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4325
+2024-08-04,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4326
+2025-04-20,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4327
+2024-12-08,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4328
+2025-03-27,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4329
+2024-12-15,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4330
+2025-02-11,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4331
+2024-07-28,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4332
+2024-06-19,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4333
+2024-11-10,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4334
+2025-04-26,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4335
+2024-09-22,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4336
+2025-05-31,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4337
+2024-07-28,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4338
+2024-12-04,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4339
+2024-12-22,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4340
+2025-06-11,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4341
+2025-04-24,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4342
+2024-12-05,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4343
+2024-09-15,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4344
+2024-08-19,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4345
+2024-09-12,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4346
+2024-09-26,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4347
+2025-05-06,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4348
+2025-03-05,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4349
+2024-08-29,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4350
+2024-11-03,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4351
+2025-03-25,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4352
+2024-08-26,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4353
+2025-03-03,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4354
+2024-09-30,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4355
+2025-05-11,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4356
+2025-01-04,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4357
+2024-08-19,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4358
+2024-08-04,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4359
+2025-05-11,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4360
+2024-09-07,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4361
+2025-02-23,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4362
+2024-07-26,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4363
+2024-08-22,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4364
+2025-03-10,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4365
+2024-12-13,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4366
+2024-10-06,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4367
+2025-04-22,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4368
+2025-05-22,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4369
+2024-10-24,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4370
+2025-02-15,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4371
+2025-03-26,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4372
+2024-07-17,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4373
+2024-08-26,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4374
+2025-03-17,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4375
+2024-11-29,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4376
+2025-03-04,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4377
+2024-09-22,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4378
+2025-01-07,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4379
+2024-09-15,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4380
+2024-11-27,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4381
+2025-02-23,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4382
+2025-01-11,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4383
+2025-04-25,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4384
+2025-06-02,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4385
+2024-09-27,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4386
+2024-11-21,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4387
+2024-10-10,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4388
+2025-05-25,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4389
+2024-08-21,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4390
+2025-04-19,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4391
+2025-01-12,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4392
+2024-08-30,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4393
+2024-08-06,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4394
+2025-01-27,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4395
+2025-05-04,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4396
+2025-05-11,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4397
+2024-06-29,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4398
+2025-01-13,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4399
+2025-03-11,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4400
+2024-12-31,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4401
+2024-12-31,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4402
+2025-02-22,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4403
+2024-08-15,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4404
+2024-10-24,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4405
+2024-08-15,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4406
+2024-09-04,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4407
+2025-03-28,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4408
+2024-10-13,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4409
+2025-02-11,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4410
+2025-03-22,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4411
+2025-03-11,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4412
+2024-10-01,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4413
+2024-11-18,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4414
+2025-03-04,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4415
+2025-02-14,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4416
+2024-10-13,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4417
+2025-02-03,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4418
+2024-06-27,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4419
+2025-02-08,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4420
+2025-02-14,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4421
+2024-06-27,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4422
+2025-03-20,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4423
+2025-01-20,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4424
+2024-08-25,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4425
+2024-10-18,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4426
+2024-06-26,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4427
+2024-08-09,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4428
+2024-10-02,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4429
+2024-09-25,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4430
+2024-12-14,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4431
+2025-06-05,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4432
+2024-10-20,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4433
+2024-10-24,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4434
+2024-12-19,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4435
+2024-10-25,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4436
+2024-07-27,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4437
+2025-04-24,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4438
+2024-07-03,S3 bucket policy denies access to Lambda,Policy lacked s3:GetObject permission. Updated bucket policy and Lambda accessed objects successfully.,TCK-AWSDEV-4439
+2025-03-30,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4440
+2024-10-22,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4441
+2024-12-06,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4442
+2024-07-08,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4443
+2024-08-31,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4444
+2024-08-04,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4445
+2024-09-19,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4446
+2025-05-15,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4447
+2025-02-25,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4448
+2025-03-24,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4449
+2025-03-18,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4450
+2025-05-18,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4451
+2025-05-15,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4452
+2025-05-03,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4453
+2025-01-16,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4454
+2024-10-14,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4455
+2025-04-13,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4456
+2024-07-06,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4457
+2024-10-10,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4458
+2024-09-06,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4459
+2025-02-03,ArgoCD sync failure on application deployment,Sync failed due to invalid Helm values. Corrected values.yaml and redeployed.,TCK-AWSDEV-4460
+2024-10-17,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4461
+2024-09-11,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4462
+2024-08-16,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4463
+2024-11-12,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4464
+2025-05-15,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4465
+2025-05-26,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4466
+2025-06-02,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4467
+2024-08-24,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4468
+2025-03-13,Docker image size excessively large,Dockerfile used unnecessary layers. Refactored Dockerfile and reduced image size by 60%.,TCK-AWSDEV-4469
+2024-07-06,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4470
+2024-07-28,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4471
+2025-06-05,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4472
+2025-02-04,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4473
+2024-08-23,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4474
+2025-03-10,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4475
+2024-06-22,Jenkins pipeline failing during artifact upload,Artifact repository credentials were expired. Rotated credentials and upload succeeded.,TCK-AWSDEV-4476
+2024-11-29,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4477
+2025-04-15,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4478
+2025-01-07,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4479
+2024-09-27,Kubernetes pod stuck in terminating state,Identified finalizer misconfiguration. Manually removed finalizers and pod was deleted successfully.,TCK-AWSDEV-4480
+2025-04-09,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4481
+2024-12-27,Alertmanager not sending email alerts,SMTP configuration was incorrect. Updated SMTP credentials and alerts began dispatching.,TCK-AWSDEV-4482
+2025-03-25,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4483
+2024-11-03,Jenkins job fails due to workspace corruption,Workspace cache contained stale data. Cleaned workspace and job executed properly.,TCK-AWSDEV-4484
+2024-07-29,AWS EC2 instance unreachable after reboot,EC2 instance was missing a public IP. Assigned Elastic IP and updated route table.,TCK-AWSDEV-4485
+2025-02-26,Docker container fails to start with permission denied,Volume mount had incorrect permissions. Adjusted ownership and container started.,TCK-AWSDEV-4486
+2025-05-23,ArgoCD application stuck in Progressing state,Resource was missing required labels. Applied label patch and sync completed.,TCK-AWSDEV-4487
+2024-10-18,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4488
+2024-08-12,Kubernetes liveness probe failing intermittently,Probe timeout was too short under load. Increased timeoutSeconds and stability improved.,TCK-AWSDEV-4489
+2025-03-29,DevOps pipeline blocked due to Git credentials issue,Access token had expired. Generated new token and pipeline resumed.,TCK-AWSDEV-4490
+2025-03-17,AWS IAM role not attached correctly to EC2,Instance profile lacked trust relationship. Added trust policy and role was assumed successfully.,TCK-AWSDEV-4491
+2025-01-24,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4492
+2024-12-04,OpenShift pod evicted due to disk pressure,Node ran out of ephemeral storage. Cleared old container logs and pod was rescheduled.,TCK-AWSDEV-4493
+2025-04-26,Prometheus not scraping metrics from node exporter,Endpoint target was marked as down due to firewall rules. Opened port and metrics appeared.,TCK-AWSDEV-4494
+2025-04-24,Alertmanager silences not respected,Silence was set on incorrect matcher. Updated silence config and alerts were suppressed correctly.,TCK-AWSDEV-4495
+2024-12-17,Prometheus rule group evaluation delay,High cardinality metrics were overwhelming Prometheus. Reduced label permutations and improved performance.,TCK-AWSDEV-4496
+2024-11-17,OpenShift route not accessible externally,Route had incorrect hostname. Updated route definition and endpoint became accessible.,TCK-AWSDEV-4497
+2024-12-11,Jenkins agent offline in distributed build,Agent disconnected due to memory exhaustion. Increased JVM heap and agent remained stable.,TCK-AWSDEV-4498
+2025-01-30,Kubernetes ingress not routing traffic,Ingress controller was not watching correct namespace. Updated config and routing restored.,TCK-AWSDEV-4499
